@@ -1,2 +1,6 @@
 simple implementation:
-one div, one script tag, one document.querySelector function call, one addEventListener function call, one function that increases the value
+one div
+one script tag
+one document.querySelector function call
+one addEventListener function call
+one function that increases the value

@@ -1,8 +1,20 @@
 <html>
   <head>
-  <title>Popular Counting Website</title>
+    <title>Popular Counting Website</title>
   </head>
   <body>
-    This is a very interesting and successful project.
+    <div id="counter" style="font-size: 30px; user-select: none" />
   </body>
+  <script>
+    const counter = document.querySelector("#counter");
+    const body = document.querySelector("body");
+
+    let x = -1;
+    function modifyCounter() {
+      x = x + 1;
+      counter.textContent = x;
+    }
+    modifyCounter();
+    body.addEventListener("click", modifyCounter);
+  </script>
 </html>
