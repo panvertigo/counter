@@ -1,9 +1,40 @@
 <html>
   <head>
     <title>Popular Counting Website</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .outer {
+        display: table;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .middle {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .inner {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 0%;
+      }
+    </style>
   </head>
   <body>
-    <div id="counter" style="font-size: 30px; user-select: none" />
+    <div class="outer" />
+    <div class="middle" />
+    <div
+      class="inner"
+      id="counter"
+      style="font-size: 100px; font: Georgia; user-select: none"
+    />
   </body>
   <script>
     const counter = document.querySelector("#counter");
