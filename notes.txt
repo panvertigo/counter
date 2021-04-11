@@ -4,3 +4,15 @@ one script tag
 one document.querySelector function call
 one addEventListener function call
 one function that increases the value
+
+dynamoDB table:
+Number: CounterID: 0
+CounterValue
+
+option 1:
+flask to deploy on ec2 instance
+uwsgi container
+
+option 2:
+running in lambda
+set up api gateway
