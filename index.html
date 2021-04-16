@@ -3,47 +3,32 @@
     <title>Popular Counting Website</title>
     <style>
       body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
         margin: 0;
-      }
-      .outer {
-        display: table;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-      }
-
-      .middle {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-      }
-
-      .inner {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 0%;
-        font: Georgia;
+        font-family: Georgia;
         font-size: 100px;
         user-select: none;
+        box-sizing: border-box;
       }
     </style>
   </head>
   <body>
-    <div class="outer" />
-    <div class="middle" />
-    <div class="inner" id="counter" />
+    <div id="counter" />
   </body>
   <script>
     const counter = document.querySelector("#counter");
     const body = document.querySelector("body");
 
     let x = -1;
-    function modifyCounter() {
-      x = x + 1;
+    const modifyCounter = () => {
+      x++;
       counter.textContent = x;
-    }
+    };
+
     modifyCounter();
     body.addEventListener("click", modifyCounter);
   </script>
